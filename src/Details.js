@@ -10,13 +10,14 @@ export default class Details extends Component{
         }
     }
     render(){
-        const title=this.props.route.params.title,
-        url=this.props.route.params.url,
-        created_at=this.props.route.params.created_at,
-        author=this.props.route.params.author
+        const data=this.props.route.params.data
+        // title=this.props.route.params.title,
+        // url=this.props.route.params.url,
+        // created_at=this.props.route.params.created_at,
+        // author=this.props.route.params.author
         return(
             <View style={{width:'100%',marginTop:40,alignItems:'center'}}>
-            <View
+            {/* <View
                 style={{width:'98%',height:'auto',borderWidth:0.1,padding:10,elevation:5}}>
                 <View style={{flexDirection:'row'}}>
                 <Text style={{fontWeight:'bold',fontSize:12,padding:10}}>Title:-</Text>
@@ -35,7 +36,11 @@ export default class Details extends Component{
                 <Text style={{fontSize:12,padding:10}}>{author}</Text>
                 </View>
                 
-                </View>
+                </View> */}
+                <Text>{JSON.stringify(data)}</Text>
+
+
+
                 </View>
         )
     }

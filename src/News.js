@@ -110,10 +110,7 @@ export default class Nasa extends Component{
                 <View style={{width:'100%',marginTop:20,alignItems:'center'}}>
                 <TouchableOpacity 
                 
-                onPress={()=>this.props.navigation.navigate('Details',{title:data.item.title,
-                                                url:data.item.url,
-                                                created_at:data.item.created_at,
-                                                author:data.item.author})}
+                onPress={()=>this.props.navigation.navigate('Details',{data:data})}
                 style={{width:'98%',height:'auto',borderWidth:0.1,padding:10,elevation:5}}>
                 <View style={{flexDirection:'row'}}>
                 <Text style={{fontWeight:'bold',fontSize:12,padding:10}}>Title:-</Text>
